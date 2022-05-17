@@ -42,6 +42,7 @@ class DoneView(TemplateView):
         context['date'] = '23.04.2022'
         return context
 
+
 class ListFeedBack(TemplateView):
     template_name = 'feedback/list_feedback.html'
 
@@ -50,6 +51,7 @@ class ListFeedBack(TemplateView):
         list_feed = Feedback.objects.all()
         context['list_feed'] = list_feed
         return context
+
 
 # Create your views here.
 
