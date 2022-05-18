@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
     {% block title %} Список отзывов {% endblock %}
 {% block content %}
-    <h1> Список отзывов </h1>
+    <h2> Список отзывов </h2>
     <ul>
-        {% for feed in list_feed %}
+        {% for feed in feedbacks %}
             <li> {{ feed.name }}, {{feed.surname}}, {{feed.feedback}}, {{feed.rating}} </li>
         {% endfor %}
     </ul>
