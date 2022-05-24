@@ -4,7 +4,7 @@
     <h2> Список отзывов </h2>
     <ul>
         {% for feed in feedbacks %}
-            <li> {{ feed.name }}, {{feed.surname}}, {{feed.feedback}}, {{feed.rating}} </li>
+            <li> id: {{ feed.pk }} {{ feed.name }}, {{feed.surname}}, {{feed.feedback}}, {{feed.rating}} </li>
         {% endfor %}
     </ul>
 {% endblock %}
